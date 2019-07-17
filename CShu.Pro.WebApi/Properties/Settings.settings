@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CShu.Pro.WebApi.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CShu_Pro_WebApi_WorkflowService_WorkflowServiceXml" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost//services/WorkflowServiceXml</Value>
+    </Setting>
+    <Setting Name="CShu_Pro_WebApi_WorkflowService1_WorkflowServiceXml" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://localhost//services/WorkflowServiceXml</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

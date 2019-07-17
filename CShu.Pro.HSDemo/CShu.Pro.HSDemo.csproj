@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FD385AC-AE95-4204-A7A3-4E75AB7CDDE2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CShu.Pro.HSDemo</RootNamespace>
+    <AssemblyName>CShu.Pro.HSDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CommonOperateSVStub.cs" />
+    <Compile Include="CreateXml\CreateIssueFormXML.cs" />
+    <Compile Include="CreateXml\CreateAntiStartMOXML.cs" />
+    <Compile Include="CreateXml\CreateRMAXML.cs" />
+    <Compile Include="CreateXml\CreateShipXML.cs" />
+    <Compile Include="CreateXml\CreateRcvRptDocXML.cs" />
+    <Compile Include="CreateXml\CreateMiscShipCommonXML.cs" />
+    <Compile Include="CreateXml\CreatePurchaseRtnXML.cs" />
+    <Compile Include="CreateXml\CreateRcvXML.cs" />
+    <Compile Include="CreateXml\CreateMOWorkHourXML.cs" />
+    <Compile Include="CreateXml\CreateMOStartXML.cs" />
+    <Compile Include="CreateXml\CreateBomXML.cs" />
+    <Compile Include="CreateXml\CreateMiscRcvTransXML.cs" />
+    <Compile Include="CreateXml\CreatePMIssueXML.cs" />
+    <Compile Include="CreateXml\CreateIssueFormRedFlushXML.cs" />
+    <Compile Include="CreateXml\CreateTransInFormXML.cs" />
+    <Compile Include="CreateXml\CreateTransferFormXML.cs" />
+    <Compile Include="ExceptionHelper.cs" />
+    <Compile Include="GetContext.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App1.config" />
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CShu.Pro.BLL\CShu.Pro.BLL.csproj">
+      <Project>{10d45511-2ef4-46b8-b34e-6ba7d687a0f0}</Project>
+      <Name>CShu.Pro.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
